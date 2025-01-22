@@ -1,5 +1,4 @@
-""" 
-"""
+""" """
 
 from kwwutils import clock, printit
 

@@ -30,36 +30,46 @@ def main(options):
     printit(prompt2, response)
 
 
-
 def Options():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--embedding', type=str, help='embedding: chroma gpt4all huggingface', default='gpt4all')
-    parser.add_argument('--llm_type', type=str, help='llm_type: chat or llm', default='chat')
-    parser.add_argument('--repeatcnt', type=int, help='repeatcnt', default=1)
-    parser.add_argument('--temperature', type=float, help='temperature', default=0.1)
+    parser.add_argument(
+        "--embedding",
+        type=str,
+        help="embedding: chroma gpt4all huggingface",
+        default="gpt4all",
+    )
+    parser.add_argument(
+        "--llm_type", type=str, help="llm_type: chat or llm", default="chat"
+    )
+    parser.add_argument("--repeatcnt", type=int, help="repeatcnt", default=1)
+    parser.add_argument("--temperature", type=float, help="temperature", default=0.1)
     """
     parser.add_argument('--model', type=str, help='model')
     """
-    parser.add_argument('--model', type=str, help='model', default="llama2")
-    parser.add_argument('--models', nargs='+', default=[
-        "codellama:7b",            
-        "everythinglm:latest",     
-        "falcon:latest",           
-        "llama2:latest",           
-        "medllama2:latest",        
-        "mistral:instruct",        
-        "mistrallite:latest",      
-        "openchat:latest",         
-        "orca-mini:latest",        
-        "samantha-mistral:latest",        
-        "vicuna:latest",           
-        "wizardcoder:latest",
-    ])
+    parser.add_argument("--model", type=str, help="model", default="llama2")
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        default=[
+            "codellama:7b",
+            "everythinglm:latest",
+            "falcon:latest",
+            "llama2:latest",
+            "medllama2:latest",
+            "mistral:instruct",
+            "mistrallite:latest",
+            "openchat:latest",
+            "orca-mini:latest",
+            "samantha-mistral:latest",
+            "vicuna:latest",
+            "wizardcoder:latest",
+        ],
+    )
     args = parser.parse_args()
     args = vars(args)
     return args
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     options = Options()
     main(**options)

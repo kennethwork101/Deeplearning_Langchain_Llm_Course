@@ -2,6 +2,7 @@
 __pycache__/
 *.egg-info
 *.py[oc]
+*.swp
 .ipynb_checkpoints/
 .pytest_cache/
 .python-version

@@ -13,4 +13,10 @@ def test_func(options, model):
     options["llm_type"] = "chat"
     response = main(**options)
     printit("response", response)
-    assert sorted(response.keys()) == ["English_Review", "Review", "followup_message", "language", "summary"]
+    assert sorted(response.keys()) == [
+        "English_Review",
+        "Review",
+        "followup_message",
+        "language",
+        "summary",
+    ]

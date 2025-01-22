@@ -58,25 +58,25 @@ Here is a question:
 
 prompt_infos = [
     {
-        "name": "physics", 
-        "description": "Good for answering questions about physics", 
-        "prompt_template": physics_template
+        "name": "physics",
+        "description": "Good for answering questions about physics",
+        "prompt_template": physics_template,
     },
     {
-        "name": "math", 
-        "description": "Good for answering math questions", 
-        "prompt_template": math_template
+        "name": "math",
+        "description": "Good for answering math questions",
+        "prompt_template": math_template,
     },
     {
-        "name": "History", 
-        "description": "Good for answering history questions", 
-        "prompt_template": history_template
+        "name": "History",
+        "description": "Good for answering history questions",
+        "prompt_template": history_template,
     },
     {
-        "name": "computer science", 
-        "description": "Good for answering computer science questions", 
-        "prompt_template": computerscience_template
-    }
+        "name": "computer science",
+        "description": "Good for answering computer science questions",
+        "prompt_template": computerscience_template,
+    },
 ]
 
 MULTI_PROMPT_ROUTER_TEMPLATE = """
@@ -122,13 +122,13 @@ def main(options):
     for p_info in prompt_infos:
         prompt = ChatPromptTemplate.from_template(template=p_info["prompt_template"])
         destination_chains[p_info["name"]] = LLMChain(llm=llm, prompt=prompt)
-#       destination_chains[p_info["name"]] = prompt | llm | StrOutputParser()
+    #       destination_chains[p_info["name"]] = prompt | llm | StrOutputParser()
 
     destinations = [f"{p['name']}: {p['description']}" for p in prompt_infos]
     destinations_str = "\n".join(destinations)
     default_prompt = ChatPromptTemplate.from_template("{input}")
     default_chain = LLMChain(llm=llm, prompt=default_prompt)
-#   default_chain = default_prompt | llm | StrOutputParser()
+    #   default_chain = default_prompt | llm | StrOutputParser()
     printit(f"default_prompt {default_prompt}", default_chain)
 
     router_template = MULTI_PROMPT_ROUTER_TEMPLATE.format(destinations=destinations_str)
@@ -138,46 +138,58 @@ def main(options):
         output_parser=RouterOutputParser(),
     )
     router_chain = LLMRouterChain.from_llm(llm, router_prompt)
-    chain = MultiPromptChain(router_chain=router_chain,
-                            destination_chains=destination_chains,
-                            default_chain=default_chain,
-                            verbose=True
-                            )
+    chain = MultiPromptChain(
+        router_chain=router_chain,
+        destination_chains=destination_chains,
+        default_chain=default_chain,
+        verbose=True,
+    )
     question = "What is black body radiation?"
     response = chain.invoke({"input": question})
     printit(question, response)
     return response
-    
+
 
 def Options():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--embedding', type=str, help='embedding: chroma gpt4all huggingface', default='gpt4all')
-    parser.add_argument('--llm_type', type=str, help='llm_type: chat or llm', default='chat')
-    parser.add_argument('--repeatcnt', type=int, help='repeatcnt', default=1)
-    parser.add_argument('--temperature', type=float, help='temperature', default=0.1)
+    parser.add_argument(
+        "--embedding",
+        type=str,
+        help="embedding: chroma gpt4all huggingface",
+        default="gpt4all",
+    )
+    parser.add_argument(
+        "--llm_type", type=str, help="llm_type: chat or llm", default="chat"
+    )
+    parser.add_argument("--repeatcnt", type=int, help="repeatcnt", default=1)
+    parser.add_argument("--temperature", type=float, help="temperature", default=0.1)
     """
     parser.add_argument('--model', type=str, help='model')
     """
-    parser.add_argument('--model', type=str, help='model', default="llama2")
-    parser.add_argument('--models', nargs='+', default=[
-        "codellama:7b",            
-        "everythinglm:latest",     
-        "falcon:latest",           
-        "llama2:latest",           
-        "medllama2:latest",        
-        "mistral:instruct",        
-        "mistrallite:latest",      
-        "openchat:latest",         
-        "orca-mini:latest",        
-        "samantha-mistral:latest",        
-        "vicuna:latest",           
-        "wizardcoder:latest",
-    ])
+    parser.add_argument("--model", type=str, help="model", default="llama2")
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        default=[
+            "codellama:7b",
+            "everythinglm:latest",
+            "falcon:latest",
+            "llama2:latest",
+            "medllama2:latest",
+            "mistral:instruct",
+            "mistrallite:latest",
+            "openchat:latest",
+            "orca-mini:latest",
+            "samantha-mistral:latest",
+            "vicuna:latest",
+            "wizardcoder:latest",
+        ],
+    )
     args = parser.parse_args()
     args = vars(args)
     return args
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     options = Options()
     main(**options)

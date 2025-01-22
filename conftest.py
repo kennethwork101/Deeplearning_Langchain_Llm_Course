@@ -20,13 +20,14 @@ all_model_file = "models_all.txt"
 #
 # ---------------------------------------------------------------------------------------------------
 
+
 def pytest_addoption(parser):
     parser.addoption("--run_type", default="one")
     parser.addoption("--model")
 
-    
+
 def pytest_generate_tests(metafunc):
-    """ 
+    """
     @param run_type: Determines which model files to use. Support run_types are: one, few, all
     @param model: If run_type is not set then model determins which model to use
     """
@@ -70,7 +71,6 @@ How to get pytest to do this?
 """
 
 
-
 #
 # ############ Normal Functions ############
 #
@@ -87,17 +87,17 @@ def models_file(model_file, models_dir="models"):
     print(f"1 models: {models}")
     # Remove models that are known to fail
     skip_models = [
-        "falcon", 
-        "gemma", 
+        "falcon",
+        "gemma",
         "meditron",
-        "medllama2", 
-        "nexusraven", 
-        "orca-mini", 
-        "samantha-mistral", 
-        "wizard-math", 
-        "yarn-llama2", 
+        "medllama2",
+        "nexusraven",
+        "orca-mini",
+        "samantha-mistral",
+        "wizard-math",
+        "yarn-llama2",
         "yarn-mistral",
-        "yi", 
+        "yi",
     ]
 
     print(f"2 skip_models: {skip_models}")
@@ -108,9 +108,9 @@ def models_file(model_file, models_dir="models"):
 
 # ### First attempt and do work but is not being used now
 def models_file_v1(model_file):
-    """ 
+    """
     Retrieve the models file
-    Note the package root is set in the os.envrion PACKAGE_ROOT so each project must set one with their own key 
+    Note the package root is set in the os.envrion PACKAGE_ROOT so each project must set one with their own key
     """
     print(f"1 conftest model_file >{model_file}<")
     # Retrieve the package root from the environment
@@ -130,6 +130,7 @@ def models_file_v1(model_file):
 # ############ Fixtures ############
 #
 
+
 @pytest.fixture(params=models_file_v1(one_model_file))
 def one_models_arg(request):
     yield request.param
@@ -148,10 +149,10 @@ def all_models_arg(request):
 @pytest.fixture(scope="session")
 def options(request):
     package_root = os.path.dirname(os.path.abspath(__file__))
-    print("^+^+^"*30)
+    print("^+^+^" * 30)
     print(f"package_root {package_root}")
     print(f"request {request}")
-#   print(f"request.module {request.module}")
+    #   print(f"request.module {request.module}")
     print(f"request.node.name {request.node.name}")
     print(f"request.node.fspath {request.node.fspath}")
     option = {
@@ -167,4 +168,3 @@ def options(request):
         "vectorstore": "Chroma",
     }
     return option
-

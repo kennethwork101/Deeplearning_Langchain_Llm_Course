@@ -10,7 +10,7 @@ def test_func(options, model):
     printit("options", options)
     printit("model", model)
     options["model"] = model
-#   options["model"] = "llama2"
+    #   options["model"] = "llama2"
     options["llm_type"] = "llm"
     responses = main(**options)
     printit("responses", responses)

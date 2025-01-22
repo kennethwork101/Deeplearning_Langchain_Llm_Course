@@ -16,5 +16,5 @@ def test_func(options, model):
     response1, response2 = main(**options)
     printit("response1", response1)
     printit("response2", response2)
-    assert sorted(response1.keys()) == ["customer_email", "style", "text"] 
-    assert sorted(response2.keys()) == ["service_reply", "style", "text"] 
+    assert sorted(response1.keys()) == ["customer_email", "style", "text"]
+    assert sorted(response2.keys()) == ["service_reply", "style", "text"]
