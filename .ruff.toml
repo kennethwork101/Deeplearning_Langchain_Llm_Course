@@ -1,2 +1,2 @@
 line-length = 88
-select = ["I"]
+lint.select = ["I"]

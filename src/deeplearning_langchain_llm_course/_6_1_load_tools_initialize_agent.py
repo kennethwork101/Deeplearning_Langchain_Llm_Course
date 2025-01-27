@@ -2,7 +2,8 @@ import argparse
 from datetime import date
 
 from kwwutils import clock, execute, get_llm, printit
-from langchain.agents import AgentType, initialize_agent, load_tools, tool
+from langchain.agents import AgentType, initialize_agent, tool
+from langchain_community.agent_toolkits.load_tools import load_tools
 
 questions = [
     "whats the date today?",

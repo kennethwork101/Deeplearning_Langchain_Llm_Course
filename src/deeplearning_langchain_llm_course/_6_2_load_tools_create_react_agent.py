@@ -7,9 +7,10 @@ from datetime import date
 
 from kwwutils import clock, execute, get_llm, printit
 
-# from googletrans import Translator
 from langchain import hub
-from langchain.agents import AgentExecutor, create_react_agent, load_tools, tool
+from langchain.agents import AgentExecutor, create_react_agent, tool
+
+from langchain_community.agent_toolkits.load_tools import load_tools
 
 questions = [
     "whats the date today?",

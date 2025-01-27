@@ -3,16 +3,18 @@ name = "deeplearning-langchain-llm-course"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
+    "google-api-python-client>=2.159.0",
     "kwwutils>=0.1.15",
     "langchain>=0.3.14",
     "langchain-experimental>=0.3.4",
+    "numexpr>=2.10.2",
     "pandas>=2.2.3",
     "pytest>=8.3.4",
-    "pytest-timeout>=2.3.1",
     "python-dotenv>=1.0.1",
     "ruff>=0.9.2",
+    "wikipedia>=1.4.0",
 ]
 
 [project.optional-dependencies]
