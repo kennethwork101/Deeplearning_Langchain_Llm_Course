@@ -1,0 +1,122 @@
+[
+    {
+        "model": "qwq:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "solar-pro:latest",
+        "size": "13",
+        "size_type": "GB"
+    },
+    {
+        "model": "reflection:latest",
+        "size": "39",
+        "size_type": "GB"
+    },
+    {
+        "model": "notux:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
+        "model": "phind-codellama:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "nous-hermes2-mixtral:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
+        "model": "megadolphin:latest",
+        "size": "67",
+        "size_type": "GB"
+    },
+    {
+        "model": "nemotron:latest",
+        "size": "42",
+        "size_type": "GB"
+    },
+    {
+        "model": "mistral-small:latest",
+        "size": "12",
+        "size_type": "GB"
+    },
+    {
+        "model": "mistral-large:latest",
+        "size": "73",
+        "size_type": "GB"
+    },
+    {
+        "model": "mixtral:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3.3:latest",
+        "size": "42",
+        "size_type": "GB"
+    },
+    {
+        "model": "goliath:latest",
+        "size": "66",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-v3:latest",
+        "size": "404",
+        "size_type": "GB"
+    },
+    {
+        "model": "dolphin-mixtral:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
+        "model": "firefunction-v2:latest",
+        "size": "39",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-v2.5:latest",
+        "size": "132",
+        "size_type": "GB"
+    },
+    {
+        "model": "codestral:latest",
+        "size": "12",
+        "size_type": "GB"
+    },
+    {
+        "model": "dbrx:latest",
+        "size": "74",
+        "size_type": "GB"
+    },
+    {
+        "model": "command-r:latest",
+        "size": "18",
+        "size_type": "GB"
+    },
+    {
+        "model": "command-r-plus:latest",
+        "size": "59",
+        "size_type": "GB"
+    },
+    {
+        "model": "codebooga:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "alfred:latest",
+        "size": "23",
+        "size_type": "GB"
+    },
+    {
+        "model": "athene-v2:latest",
+        "size": "47",
+        "size_type": "GB"
+    }
+]

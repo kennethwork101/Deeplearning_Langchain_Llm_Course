@@ -1,7 +1,12 @@
 [
     {
-        "model": "llama2:latest",
-        "size": "3.8",
+        "model": "qwen2:latest",
+        "size": "4.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2.5:latest",
+        "size": "4.7",
         "size_type": "GB"
     },
     {
@@ -10,13 +15,18 @@
         "size_type": "GB"
     },
     {
-        "model": "openchat:latest",
-        "size": "4.1",
+        "model": "llama3-groq-tool-use:latest",
+        "size": "4.7",
         "size_type": "GB"
     },
     {
-        "model": "openhermes:latest",
-        "size": "4.1",
+        "model": "llama3.2:latest",
+        "size": "2.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3.1:latest",
+        "size": "4.9",
         "size_type": "GB"
     }
 ]

@@ -1,0 +1,82 @@
+[
+    {
+        "model": "deepseek-r1:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2:latest",
+        "size": "4.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2.5:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "smollm2:latest",
+        "size": "1.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "mistral-nemo:latest",
+        "size": "7.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "nemotron-mini:latest",
+        "size": "2.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "mistral:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "granite3.1-moe:latest",
+        "size": "2.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3-groq-tool-use:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3.2:latest",
+        "size": "2.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "granite3-dense:latest",
+        "size": "1.6",
+        "size_type": "GB"
+    },
+    {
+        "model": "granite3.1-dense:latest",
+        "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "hermes3:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3.1:latest",
+        "size": "4.9",
+        "size_type": "GB"
+    },
+    {
+        "model": "command-r7b:latest",
+        "size": "5.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "aya-expanse:latest",
+        "size": "5.1",
+        "size_type": "GB"
+    }
+]

@@ -1,7 +1,7 @@
 [
     {
-        "model": "hermes3:latest",
-        "size": "4.1",
+        "model": "llama3.2:latest",
+        "size": "2.0",
         "size_type": "GB"
     }
 ]

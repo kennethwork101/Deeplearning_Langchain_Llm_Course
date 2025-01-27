@@ -5,6 +5,21 @@
         "size_type": "GB"
     },
     {
+        "model": "yi-coder:latest",
+        "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "starcoder2:latest",
+        "size": "1.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "wizardcoder:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
         "model": "stablelm-zephyr:latest",
         "size": "1.6",
         "size_type": "GB"
@@ -22,6 +37,11 @@
     {
         "model": "xwinlm:latest",
         "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "starcoder:latest",
+        "size": "1.8",
         "size_type": "GB"
     },
     {
@@ -45,8 +65,18 @@
         "size_type": "GB"
     },
     {
+        "model": "stable-code:latest",
+        "size": "1.6",
+        "size_type": "GB"
+    },
+    {
         "model": "tulu3:latest",
         "size": "4.9",
+        "size_type": "GB"
+    },
+    {
+        "model": "wizard-math:latest",
+        "size": "4.1",
         "size_type": "GB"
     },
     {
@@ -70,6 +100,11 @@
         "size_type": "GB"
     },
     {
+        "model": "qwen2.5-coder:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
         "model": "smallthinker:latest",
         "size": "3.6",
         "size_type": "GB"
@@ -77,6 +112,11 @@
     {
         "model": "qwen2:latest",
         "size": "4.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwq:latest",
+        "size": "19",
         "size_type": "GB"
     },
     {
@@ -100,6 +140,16 @@
         "size_type": "GB"
     },
     {
+        "model": "sqlcoder:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "solar-pro:latest",
+        "size": "13",
+        "size_type": "GB"
+    },
+    {
         "model": "qwen:latest",
         "size": "2.3",
         "size_type": "GB"
@@ -107,6 +157,16 @@
     {
         "model": "shieldgemma:latest",
         "size": "5.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2-math:latest",
+        "size": "4.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "reflection:latest",
+        "size": "39",
         "size_type": "GB"
     },
     {
@@ -137,6 +197,11 @@
     {
         "model": "phi4:latest",
         "size": "9.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "notux:latest",
+        "size": "26",
         "size_type": "GB"
     },
     {
@@ -180,8 +245,18 @@
         "size_type": "GB"
     },
     {
+        "model": "opencoder:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
         "model": "phi3:latest",
         "size": "2.2",
+        "size_type": "GB"
+    },
+    {
+        "model": "phind-codellama:latest",
+        "size": "19",
         "size_type": "GB"
     },
     {
@@ -190,8 +265,18 @@
         "size_type": "GB"
     },
     {
+        "model": "nous-hermes2-mixtral:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
         "model": "nous-hermes:latest",
         "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "megadolphin:latest",
+        "size": "67",
         "size_type": "GB"
     },
     {
@@ -210,6 +295,11 @@
         "size_type": "GB"
     },
     {
+        "model": "nemotron:latest",
+        "size": "42",
+        "size_type": "GB"
+    },
+    {
         "model": "neural-chat:latest",
         "size": "4.1",
         "size_type": "GB"
@@ -225,6 +315,16 @@
         "size_type": "GB"
     },
     {
+        "model": "magicoder:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "mathstral:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    },
+    {
         "model": "medllama2:latest",
         "size": "3.8",
         "size_type": "GB"
@@ -235,6 +335,11 @@
         "size_type": "GB"
     },
     {
+        "model": "mistral-small:latest",
+        "size": "12",
+        "size_type": "GB"
+    },
+    {
         "model": "mistral-openorca:latest",
         "size": "4.1",
         "size_type": "GB"
@@ -242,6 +347,16 @@
     {
         "model": "mistrallite:latest",
         "size": "4.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "mistral-large:latest",
+        "size": "73",
+        "size_type": "GB"
+    },
+    {
+        "model": "mixtral:latest",
+        "size": "26",
         "size_type": "GB"
     },
     {
@@ -262,6 +377,11 @@
     {
         "model": "llama3-groq-tool-use:latest",
         "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "granite-code:latest",
+        "size": "2.0",
         "size_type": "GB"
     },
     {
@@ -287,6 +407,11 @@
     {
         "model": "llama3.2:latest",
         "size": "2.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "llama3.3:latest",
+        "size": "42",
         "size_type": "GB"
     },
     {
@@ -355,8 +480,23 @@
         "size_type": "GB"
     },
     {
+        "model": "goliath:latest",
+        "size": "66",
+        "size_type": "GB"
+    },
+    {
         "model": "llama3-chatqa:latest",
         "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "duckdb-nsql:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-v3:latest",
+        "size": "404",
         "size_type": "GB"
     },
     {
@@ -370,6 +510,11 @@
         "size_type": "GB"
     },
     {
+        "model": "dolphin-mixtral:latest",
+        "size": "26",
+        "size_type": "GB"
+    },
+    {
         "model": "dolphin-llama3:latest",
         "size": "4.7",
         "size_type": "GB"
@@ -377,6 +522,11 @@
     {
         "model": "gemma:latest",
         "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "firefunction-v2:latest",
+        "size": "39",
         "size_type": "GB"
     },
     {
@@ -392,6 +542,11 @@
     {
         "model": "falcon3:latest",
         "size": "4.6",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-v2.5:latest",
+        "size": "132",
         "size_type": "GB"
     },
     {
@@ -415,8 +570,23 @@
         "size_type": "GB"
     },
     {
+        "model": "dolphincoder:latest",
+        "size": "4.2",
+        "size_type": "GB"
+    },
+    {
         "model": "dolphin3:latest",
         "size": "4.9",
+        "size_type": "GB"
+    },
+    {
+        "model": "codegeex4:latest",
+        "size": "5.5",
+        "size_type": "GB"
+    },
+    {
+        "model": "codestral:latest",
+        "size": "12",
         "size_type": "GB"
     },
     {
@@ -425,8 +595,28 @@
         "size_type": "GB"
     },
     {
+        "model": "codellama:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
         "model": "command-r7b:latest",
         "size": "5.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "dbrx:latest",
+        "size": "74",
+        "size_type": "GB"
+    },
+    {
+        "model": "command-r:latest",
+        "size": "18",
+        "size_type": "GB"
+    },
+    {
+        "model": "command-r-plus:latest",
+        "size": "59",
         "size_type": "GB"
     },
     {
@@ -437,6 +627,31 @@
     {
         "model": "bespoke-minicheck:latest",
         "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "codebooga:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "codegemma:latest",
+        "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "alfred:latest",
+        "size": "23",
+        "size_type": "GB"
+    },
+    {
+        "model": "codeqwen:latest",
+        "size": "4.2",
+        "size_type": "GB"
+    },
+    {
+        "model": "codeup:latest",
+        "size": "7.4",
         "size_type": "GB"
     },
     {
@@ -457,6 +672,16 @@
     {
         "model": "aya:latest",
         "size": "4.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-coder-v2:latest",
+        "size": "8.9",
+        "size_type": "GB"
+    },
+    {
+        "model": "athene-v2:latest",
+        "size": "47",
         "size_type": "GB"
     }
 ]

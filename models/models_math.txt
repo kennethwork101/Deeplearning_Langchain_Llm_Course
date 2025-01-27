@@ -1,0 +1,17 @@
+[
+    {
+        "model": "wizard-math:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2-math:latest",
+        "size": "4.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "mathstral:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    }
+]

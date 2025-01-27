@@ -1,0 +1,102 @@
+[
+    {
+        "model": "yi-coder:latest",
+        "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "starcoder2:latest",
+        "size": "1.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "wizardcoder:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "starcoder:latest",
+        "size": "1.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "stable-code:latest",
+        "size": "1.6",
+        "size_type": "GB"
+    },
+    {
+        "model": "qwen2.5-coder:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "sqlcoder:latest",
+        "size": "4.1",
+        "size_type": "GB"
+    },
+    {
+        "model": "opencoder:latest",
+        "size": "4.7",
+        "size_type": "GB"
+    },
+    {
+        "model": "phind-codellama:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "magicoder:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "granite-code:latest",
+        "size": "2.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "dolphincoder:latest",
+        "size": "4.2",
+        "size_type": "GB"
+    },
+    {
+        "model": "codegeex4:latest",
+        "size": "5.5",
+        "size_type": "GB"
+    },
+    {
+        "model": "codestral:latest",
+        "size": "12",
+        "size_type": "GB"
+    },
+    {
+        "model": "codellama:latest",
+        "size": "3.8",
+        "size_type": "GB"
+    },
+    {
+        "model": "codebooga:latest",
+        "size": "19",
+        "size_type": "GB"
+    },
+    {
+        "model": "codegemma:latest",
+        "size": "5.0",
+        "size_type": "GB"
+    },
+    {
+        "model": "codeqwen:latest",
+        "size": "4.2",
+        "size_type": "GB"
+    },
+    {
+        "model": "codeup:latest",
+        "size": "7.4",
+        "size_type": "GB"
+    },
+    {
+        "model": "deepseek-coder-v2:latest",
+        "size": "8.9",
+        "size_type": "GB"
+    }
+]
