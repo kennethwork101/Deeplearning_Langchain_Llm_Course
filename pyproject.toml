@@ -39,3 +39,17 @@ dev = [
     "pytest-xdist>=3.5.0",
     "pytest-xvfb>=3.0.0",
 ]
+
+[tool.ruff]
+extend-select = ["I"]
+
+[tool.ruff.lint.isort]
+# Required for uv compatibility
+required-imports = ["from __future__ import annotations"]
+# Tell isort about your package manager
+known-first-party = ["your_project_name"]
+# If you use specific third-party packages that should be grouped
+known-third-party = ["numpy", "pandas"]  # adjust as needed
+
+# Important for uv to recognize local packages correctly
+combine-as-imports = true

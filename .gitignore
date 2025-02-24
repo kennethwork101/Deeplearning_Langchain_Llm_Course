@@ -17,6 +17,7 @@ __pycache__
 __pycache__/
 _pycache__/
 *.py[oc]
+.python-version
 .pytest_cache/
 results/
 .ruff_cache/
