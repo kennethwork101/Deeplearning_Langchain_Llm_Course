@@ -6,7 +6,6 @@ from uvprog2025.Deeplearning_Langchain_Llm_Course.src.deeplearning_langchain_llm
 )
 
 
-@pytest.mark.testme2
 @clock
 def test_func(options, model):
     printit("options", options)
